@@ -1,0 +1,37 @@
+**/.project
+**/.settings
+**/.classpath
+
+# Maven
+
+**/target/
+
+# Java
+
+*.class
+*.war
+*.ear
+hs_err_pid*
+
+
+# Editors
+
+## IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+local.properties
+
+## VS Code
+
+.vscode
+
+
+# OS generated files
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.dbs

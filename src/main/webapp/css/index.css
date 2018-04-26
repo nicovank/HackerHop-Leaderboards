@@ -1,0 +1,30 @@
+* {
+	font-family: Lato, sans-serif !important;
+}
+
+body {
+	background-image: url(/images/cloud.png);
+}
+
+div#content-wrapper {
+	background-color: #FFF;
+	margin: auto;
+	width: 1080px;
+	padding: 2em;
+}
+
+h1 {
+	border-bottom: 2px solid #bdbdbd;
+}
+
+table {
+	margin-top: 3em;
+}
+
+td.character {
+	text-align: center;
+}
+
+td.character img {
+	height: 50px;
+}

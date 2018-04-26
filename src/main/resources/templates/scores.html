@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>HackerHop - Leaderboards</title>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="/css/index.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/kube/6.5.2/css/kube.min.css" />
+
+	<!-- JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/kube/6.5.2/js/kube.min.js"></script>
+</head>
+<body>
+	<div id="content-wrapper">
+
+		<h1>HackerHop Leaderboard</h1>
+
+		<table class="bordered striped">
+			<thead>
+			<tr>
+				<th>Character</th>
+				<th>Name</th>
+				<th>Score</th>
+				<th>Game Duration</th>
+				<th>Date of the Score</th>
+			</tr>
+			</thead>
+			<tbody>
+			{{#scores}}
+			<tr>
+				<td class="character"><img alt="{{character}}" src="/images/characters/{{character}}.png" /></td>
+				<td>{{name}}</td>
+				<td>{{score}}</td>
+				<td>{{duration}}</td>
+				<td>{{date}}</td>
+			</tr>
+			{{/scores}}
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
