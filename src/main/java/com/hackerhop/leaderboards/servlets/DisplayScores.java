@@ -38,6 +38,7 @@ public class DisplayScores extends HttpServlet {
 			template.execute(out, context);
 
 		} catch (IOException | SQLException | ClassNotFoundException e) {
+			e.printStackTrace();
 			throw new ServletException(e);
 		}
 	}

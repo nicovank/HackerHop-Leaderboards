@@ -20,11 +20,16 @@ public class AddScore extends HttpServlet {
 		ObjectMapper mapper = new ObjectMapper();
 		Score score = mapper.readValue(request.getReader(), Score.class);
 
+		System.out.println("Received request to add score of " + score.score + " for '" + score.name + "'.");
+
 		try {
-			if(!Scores.add(score)) {
+			if(Scores.add(score)) {
+				System.out.println("Score successfully added.");
+			} else {
 				throw new ServletException("The score could not be added.");
 			}
 		} catch (SQLException | ClassNotFoundException e) {
+			e.printStackTrace();
 			throw new ServletException(e);
 		}
 	}
