@@ -6,5 +6,6 @@ CREATE TABLE Scores (
 	PlayerName    VARCHAR(50)                         NOT NULL,
 	Time_Recorded DATETIME                            NOT NULL,
 
-	PRIMARY KEY (ID)
+	PRIMARY KEY (ID),
+	UNIQUE (Player, Score, Duration, PlayerName)
 );
